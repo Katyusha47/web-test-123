@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="12" fill="#ffffff" />
+
+  <!-- Icon (translated to center top half) -->
+  <g transform="translate(24,12)">
+    <circle cx="20" cy="26" r="6" fill="#004c97" /><circle cx="32" cy="26" r="6" fill="#004c97" /><path d="M20 20 L32 20 M20 32 L32 32" stroke="#004c97" stroke-width="3" />
+  </g>
+
+  <!-- Sector tag -->
+  <text x="50" y="72" font-family="Inter,system-ui,sans-serif" font-size="6" font-weight="800" fill="#0284c7" letter-spacing="0.8px" text-anchor="middle">STEEL PROCESSING</text>
+
+  <!-- Company name -->
+  <text x="50" y="85" font-family="Inter,system-ui,sans-serif" font-size="9" font-weight="800" fill="#004c97" letter-spacing="0px" text-anchor="middle">POSCO IJPC</text>
+</svg>

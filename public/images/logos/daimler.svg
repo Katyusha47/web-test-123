@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="12" fill="#ffffff" />
+
+  <!-- Icon (translated to center top half) -->
+  <g transform="translate(24,12)">
+    <circle cx="26" cy="26" r="15" fill="none" stroke="#334155" stroke-width="2.5" /><line x1="26" y1="11" x2="26" y2="26" stroke="#334155" stroke-width="2.5" stroke-linecap="round" /><line x1="26" y1="26" x2="13" y2="34" stroke="#334155" stroke-width="2.5" stroke-linecap="round" /><line x1="26" y1="26" x2="39" y2="34" stroke="#334155" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Sector tag -->
+  <text x="50" y="72" font-family="Inter,system-ui,sans-serif" font-size="6" font-weight="800" fill="#475569" letter-spacing="0.8px" text-anchor="middle">TRUCKS &amp; BUSES</text>
+
+  <!-- Company name -->
+  <text x="50" y="85" font-family="Inter,system-ui,sans-serif" font-size="9" font-weight="800" fill="#0f172a" letter-spacing="0.5px" text-anchor="middle">DAIMLER</text>
+</svg>

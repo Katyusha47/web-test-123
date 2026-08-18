@@ -1,0 +1,261 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Contact Us & Locations - SCU.ASIA"
+  description="Get in touch with PT Suksesindo Cahaya Utama. Contact our main office in Tangerang-Banten or our workshop in Cileungsi-Bogor. Call +6281389833939 for hoist crane sales or emergency maintenance."
+>
+  <!-- Banner -->
+  <section
+    class="page-banner"
+    style="background-image: linear-gradient(rgba(13, 61, 75, 0.85), rgba(13, 61, 75, 0.85)), url('/images/01_IMG_20260106_221214-1-1024x576.jpg');"
+  >
+    <div class="container text-center">
+      <h1>Contact Us</h1>
+      <p>Reach out to our material handling and hoisting specialists today.</p>
+    </div>
+  </section>
+
+  <!-- Contact Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="gap: 4rem; align-items: start;">
+        <!-- Details Column -->
+        <div>
+          <span class="product-badge">GET IN TOUCH</span>
+          <h2
+            style="font-size: 2.25rem; color: var(--color-teal); margin-bottom: 1.5rem;"
+          >
+            Contact Information
+          </h2>
+          <p style="color: var(--color-text-muted); margin-bottom: 2.5rem;">
+            Whether you are looking to purchase a new overhead crane, upgrade an
+            existing system, or schedule preventive maintenance, we are ready to
+            assist you.
+          </p>
+
+          <div class="contact-details-list">
+            <!-- Detail 1 -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">📍</div>
+              <div class="contact-card-info">
+                <h3>Main Office (Tangerang)</h3>
+                <p>
+                  Cikupa Asri Cluster Anaphalis G2 No. 23, Pasir Gadung, Kec.
+                  Cikupa, Kabupaten Tangerang, Banten 15710, Indonesia.
+                </p>
+              </div>
+            </div>
+
+            <!-- Detail 2 -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">🛠️</div>
+              <div class="contact-card-info">
+                <h3>Office & Workshop (Bogor)</h3>
+                <p>
+                  Mampir Barat, Jl. Rawa Ilat 006/003, Cileungsi &ndash; Bogor
+                  16820, Indonesia.
+                </p>
+              </div>
+            </div>
+
+            <!-- Detail 3 -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">📞</div>
+              <div class="contact-card-info">
+                <h3>Call / WhatsApp Support</h3>
+                <p><strong>+62 813-8983-3939</strong></p>
+                <p
+                  style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0;"
+                >
+                  Operation Hours: Mon &ndash; Sat: 08:00 AM &ndash; 05:00 PM
+                </p>
+              </div>
+            </div>
+
+            <!-- Detail 4 -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">✉️</div>
+              <div class="contact-card-info">
+                <h3>Email Inquiry</h3>
+                <p><strong>sales@scu.asia</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-wrapper">
+          <h3
+            style="color: var(--color-teal); font-size: 1.5rem; margin-bottom: 1.5rem;"
+          >
+            Send a Message
+          </h3>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                required
+                placeholder="John Doe"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                required
+                placeholder="john@example.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form-input"
+                required
+                placeholder="Inquiry about Double Girder Crane"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input"
+                required
+                placeholder="Describe your lifting requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;"
+              >Send Message</button
+            >
+          </form>
+
+          <div
+            id="form-success"
+            style="display: none; text-align: center; padding: 2rem 1rem;"
+          >
+            <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+            <h4
+              style="color: var(--color-primary); font-size: 1.25rem; margin-bottom: 0.5rem;"
+            >
+              Thank You!
+            </h4>
+            <p style="font-size: 0.95rem; color: var(--color-text-muted);">
+              Your message has been sent successfully. Our team will contact you
+              shortly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client References Section -->
+  <section class="section section-alt">
+    <div class="container text-center">
+      <span class="product-badge">OUR CLIENTS</span>
+      <h2
+        style="font-size: 2rem; color: var(--color-teal); margin-bottom: 2rem;"
+      >
+        Trusted Business Partners
+      </h2>
+      <div
+        style="max-width: 900px; margin: 0 auto; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);"
+      >
+        <img
+          src="/images/02_REFERENSI-CUSTOMER-1024x513.png"
+          alt="Customer References"
+          style="width: 100%; height: auto; display: block;"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive script for contact form mock submission -->
+  <script>
+    const form = document.getElementById(
+      "contact-form",
+    ) as HTMLFormElement | null;
+    const successDiv = document.getElementById("form-success");
+
+    if (form && successDiv) {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        form.style.display = "none";
+        successDiv.style.display = "block";
+      });
+    }
+  </script>
+</Layout>
+
+<style>
+  /* Banner */
+  .page-banner {
+    padding: 6rem 0;
+    color: var(--color-text-light);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .page-banner h1 {
+    font-size: 2.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-banner p {
+    font-size: 1.15rem;
+    opacity: 0.9;
+    font-weight: 300;
+  }
+
+  /* Contact Details List */
+  .contact-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-card-item {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    background-color: var(--color-bg-alt);
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-primary);
+  }
+
+  .contact-card-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .contact-card-info h3 {
+    font-size: 1.1rem;
+    color: var(--color-teal);
+    margin-bottom: 0.35rem;
+  }
+
+  .contact-card-info p {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.25rem;
+    line-height: 1.4;
+  }
+</style>

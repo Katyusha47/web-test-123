@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="12" fill="#ffffff" />
+
+  <!-- Icon (translated to center top half) -->
+  <g transform="translate(24,12)">
+    <path d="M26 38 C26 20, 16 16, 16 16 C16 16, 26 26, 26 38 Z" fill="#15803d" /><path d="M26 38 C26 20, 36 16, 36 16 C36 16, 26 26, 26 38 Z" fill="#84cc16" />
+  </g>
+
+  <!-- Sector tag -->
+  <text x="50" y="72" font-family="Inter,system-ui,sans-serif" font-size="6" font-weight="800" fill="#15803d" letter-spacing="0.8px" text-anchor="middle">AGRIBUSINESS</text>
+
+  <!-- Company name -->
+  <text x="50" y="85" font-family="Inter,system-ui,sans-serif" font-size="9" font-weight="800" fill="#166534" letter-spacing="0px" text-anchor="middle">PADI HIJAU</text>
+</svg>

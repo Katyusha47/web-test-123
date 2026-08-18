@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="12" fill="#ffffff" />
+
+  <!-- Icon (translated to center top half) -->
+  <g transform="translate(24,12)">
+    <rect x="13" y="16" width="26" height="20" rx="5" fill="#059669" /><text x="26" y="30" font-family="Arial" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">F</text>
+  </g>
+
+  <!-- Sector tag -->
+  <text x="50" y="72" font-family="Inter,system-ui,sans-serif" font-size="6" font-weight="800" fill="#059669" letter-spacing="0.8px" text-anchor="middle">PLASTIC INJECTION</text>
+
+  <!-- Company name -->
+  <text x="50" y="85" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="800" fill="#047857" letter-spacing="0.5px" text-anchor="middle">FRAMAS</text>
+</svg>

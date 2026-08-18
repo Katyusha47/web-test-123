@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="12" fill="#ffffff" />
+
+  <!-- Icon (translated to center top half) -->
+  <g transform="translate(24,12)">
+    <circle cx="26" cy="26" r="14" fill="#0891b2" /><path d="M20 20 C26 14, 32 20, 26 26 C20 32, 26 38, 32 32" stroke="#ffffff" stroke-width="2.5" fill="none" />
+  </g>
+
+  <!-- Sector tag -->
+  <text x="50" y="72" font-family="Inter,system-ui,sans-serif" font-size="6" font-weight="800" fill="#0891b2" letter-spacing="0.8px" text-anchor="middle">PLASTICIZER</text>
+
+  <!-- Company name -->
+  <text x="50" y="85" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="800" fill="#0e7490" letter-spacing="1px" text-anchor="middle">SDP</text>
+</svg>

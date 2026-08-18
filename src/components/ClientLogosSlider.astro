@@ -1,0 +1,190 @@
+---
+interface Props {
+  title?: string;
+  badge?: string;
+  description?: string;
+  bgClass?: string;
+}
+
+const {
+  title = "Trusted Business Partners",
+  badge = "OUR CLIENTS",
+  description = "Trusted by 40+ leading enterprises, state-owned corporations (BUMN), multinational manufacturers, and infrastructure leaders across Indonesia.",
+  bgClass = "section-alt",
+} = Astro.props;
+
+type RasterImage = { src: string };
+
+const logoModules = import.meta.glob("../assets/*.{png,jpg,jpeg,webp,avif}", {
+  eager: true,
+  import: "default",
+}) as Record<string, RasterImage>;
+
+const prettyName = (filePath: string) =>
+  filePath
+    .split("/")
+    .pop()
+    ?.replace(/\.[^/.]+$/, "")
+    .replace(/[_-]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/\b\w/g, (char) => char.toUpperCase()) ?? "Client Logo";
+
+const logos = Object.entries(logoModules)
+  .filter(([filePath]) => !filePath.endsWith("/vahle.png"))
+  .sort(([leftPath], [rightPath]) => leftPath.localeCompare(rightPath))
+  .map(([filePath, image]) => ({
+    name: prettyName(filePath),
+    src: image.src,
+  }));
+
+const rowCount = 3;
+const logoRows = Array.from({ length: rowCount }, () => [] as typeof logos);
+
+logos.forEach((logo, index) => {
+  logoRows[index % rowCount].push(logo);
+});
+
+const marqueeRows = logoRows.map((row) => [...row, ...row]);
+---
+
+<section class={`section clients-section ${bgClass}`}>
+  <div class="container text-center" style="margin-bottom: 2.5rem;">
+    {badge && <span class="product-badge">{badge}</span>}
+    {title && <h2 class="clients-title">{title}</h2>}
+    {description && <p class="clients-desc">{description}</p>}
+  </div>
+
+  <div class="marquee-rows">
+    {
+      marqueeRows.map((row, rowIndex) => (
+        <div class="marquee-wrap">
+          <div
+            class={`marquee-track ${rowIndex % 2 === 1 ? "reverse" : ""}`}
+            style={`--duration: ${24 + rowIndex * 3}s;`}
+          >
+            {row.map((logo) => (
+              <div class="logo-card" aria-label={logo.name}>
+                <img
+                  src={logo.src}
+                  alt={logo.name}
+                  class="client-logo-img"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .clients-section {
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 0;
+  }
+
+  .clients-title {
+    font-size: 2.25rem;
+    color: var(--color-teal);
+    margin-bottom: 0.75rem;
+  }
+
+  .clients-desc {
+    max-width: 750px;
+    margin: 0 auto;
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .marquee-rows {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .marquee-wrap {
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+  }
+
+  .marquee-track {
+    display: flex;
+    min-width: max-content;
+    width: max-content;
+    gap: 1.25rem;
+    align-items: center;
+    animation: marquee var(--duration, 26s) linear infinite;
+    will-change: transform;
+  }
+
+  .marquee-track.reverse {
+    animation-direction: reverse;
+  }
+
+  .marquee-wrap:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  .logo-card {
+    flex-shrink: 0;
+    width: 172px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    border-radius: 16px;
+    padding: 0.9rem;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  }
+
+  .client-logo-img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: auto;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(calc(-50% - 0.625rem), 0, 0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .marquee-rows {
+      gap: 0.75rem;
+    }
+
+    .logo-card {
+      width: 132px;
+      height: 74px;
+      padding: 0.7rem;
+    }
+  }
+</style>

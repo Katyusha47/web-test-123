@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="12" fill="#ffffff" />
+
+  <!-- Icon (translated to center top half) -->
+  <g transform="translate(24,12)">
+    <rect x="13" y="18" width="26" height="18" rx="3" fill="#b45309" /><rect x="17" y="14" width="5" height="4" fill="#1e293b" /><rect x="30" y="14" width="5" height="4" fill="#dc2626" /><path d="M24 22 L22 28 L27 28 L25 34" stroke="#fde047" stroke-width="2" fill="none" />
+  </g>
+
+  <!-- Sector tag -->
+  <text x="50" y="72" font-family="Inter,system-ui,sans-serif" font-size="6" font-weight="800" fill="#b45309" letter-spacing="0.8px" text-anchor="middle">BATTERIES</text>
+
+  <!-- Company name -->
+  <text x="50" y="85" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="800" fill="#92400e" letter-spacing="1px" text-anchor="middle">CBI</text>
+</svg>

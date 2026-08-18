@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="12" fill="#ffffff" />
+
+  <!-- Icon (translated to center top half) -->
+  <g transform="translate(24,12)">
+    <rect x="13" y="15" width="26" height="22" rx="3" fill="#3730a3" /><polygon points="26,19 32,31 20,31" fill="#06b6d4" />
+  </g>
+
+  <!-- Sector tag -->
+  <text x="50" y="72" font-family="Inter,system-ui,sans-serif" font-size="6" font-weight="800" fill="#4f46e5" letter-spacing="0.8px" text-anchor="middle">ENGINEERING</text>
+
+  <!-- Company name -->
+  <text x="50" y="85" font-family="Inter,system-ui,sans-serif" font-size="8" font-weight="800" fill="#3730a3" letter-spacing="0px" text-anchor="middle">SABI TEKNIK</text>
+</svg>

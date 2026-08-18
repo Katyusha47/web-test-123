@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="12" fill="#ffffff" />
+
+  <!-- Icon (translated to center top half) -->
+  <g transform="translate(24,12)">
+    <path d="M12 28 C12 16, 24 12, 32 14 C32 24, 24 32, 12 32 Z" fill="#15803d" /><path d="M22 34 C28 26, 36 24, 38 34 C32 38, 26 38, 22 34 Z" fill="#84cc16" />
+  </g>
+
+  <!-- Sector tag -->
+  <text x="50" y="72" font-family="Inter,system-ui,sans-serif" font-size="6" font-weight="800" fill="#16a34a" letter-spacing="0.8px" text-anchor="middle">SINAR MAS GROUP</text>
+
+  <!-- Company name -->
+  <text x="50" y="85" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="800" fill="#0f766e" letter-spacing="1px" text-anchor="middle">APP</text>
+</svg>

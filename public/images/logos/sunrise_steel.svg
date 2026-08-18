@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="12" fill="#ffffff" />
+
+  <!-- Icon (translated to center top half) -->
+  <g transform="translate(24,12)">
+    <circle cx="26" cy="26" r="14" fill="#dc2626" /><path d="M14 26 A 12 12 0 0 1 38 26 Z" fill="#facc15" /><line x1="12" y1="26" x2="40" y2="26" stroke="#ffffff" stroke-width="2" />
+  </g>
+
+  <!-- Sector tag -->
+  <text x="50" y="72" font-family="Inter,system-ui,sans-serif" font-size="6" font-weight="800" fill="#dc2626" letter-spacing="0.8px" text-anchor="middle">STEEL MILL</text>
+
+  <!-- Company name -->
+  <text x="50" y="85" font-family="Inter,system-ui,sans-serif" font-size="8" font-weight="800" fill="#b91c1c" letter-spacing="0px" text-anchor="middle">SUNRISE STEEL</text>
+</svg>
