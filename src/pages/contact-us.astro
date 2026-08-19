@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ClientLogosSlider from "../components/ClientLogosSlider.astro";
 ---
 
 <Layout
@@ -166,25 +167,7 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <!-- Client References Section -->
-  <section class="section section-alt">
-    <div class="container text-center">
-      <span class="product-badge">OUR CLIENTS</span>
-      <h2
-        style="font-size: 2rem; color: var(--color-teal); margin-bottom: 2rem;"
-      >
-        Trusted Business Partners
-      </h2>
-      <div
-        style="max-width: 900px; margin: 0 auto; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);"
-      >
-        <img
-          src="/images/02_REFERENSI-CUSTOMER-1024x513.png"
-          alt="Customer References"
-          style="width: 100%; height: auto; display: block;"
-        />
-      </div>
-    </div>
-  </section>
+  <ClientLogosSlider />
 
   <!-- Interactive script for contact form mock submission -->
   <script>
